@@ -1,0 +1,83 @@
+section .form {
+    height: 600px;
+    text-align: center;
+    .name {
+        margin-top: 68px;
+    }
+}
+
+section .form input {
+    border: none;
+    width: 370px;
+    height: 75px;
+    border-radius: 38px;
+    background-color: #f5fafa;
+    opacity: 0.35;
+    color: #505050;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+    &:hover {
+        box-shadow: 0 8px 16px rgba(92, 149, 161, 0.07);
+        border-radius: 38px;
+        border: 1px solid rgba(0, 0, 0, 0.03);
+        background-color: #ffffff;
+    }
+}
+
+.form .subscribe{
+    width: 370px;
+    height: 75px;
+    border-radius: 38px;
+    background-color: #66d4f4;
+    border: none;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 10px 16px rgba(102, 212, 244, 0.3);
+        letter-spacing: 1.47px;
+    }
+}
+
+@media(max-width: 400px){
+    section .form input {
+        width: 250px;
+    }
+    section .form .subscribe{
+        width: 250px;
+    }
+}
+
+
+
+
+.last {
+    width: 70%;
+    height: 1px;
+    background-color: #dfdfdf;
+}
+
+footer .columns {
+    color: #8c8c8c;
+    height: 200px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    text-align: left;
+}
+
+.columns a {
+    list-style-type: none;
+    overflow: hidden;
+    text-decoration: none;
+}
+

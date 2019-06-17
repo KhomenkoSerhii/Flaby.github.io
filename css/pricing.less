@@ -1,0 +1,147 @@
+
+.pricing-table{
+        background: url("../img/pricing/bg-pricing.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 900px;
+    }
+    .sect {
+        padding: 40px 0 100px;
+    }
+    .table {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+.bg-set {
+    background-repeat: no-repeat;
+    background-position: 50% 50px, 100% top, 100% top;
+}
+
+.pricing-table {
+    .section {
+        width: 320px;
+        height: 580px;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.04);
+        background-color: #ffffff;
+    }
+    .student {
+        background-image: url("../img/pricing/Book.png"), url("../img/pricing/pattern1.png"), url("../img/pricing/pattern2.png");
+        .bg-set;
+    }
+    .professional {
+        background-image: url("../img/pricing/bag.png"), url("../img/pricing/pattern1.png"), url("../img/pricing/pattern2.png");
+        .bg-set;
+    }
+    .unlimited {
+        background-image: url("../img/pricing/shopping_Bag.png"), url("../img/pricing/pattern1.png"), url("../img/pricing/pattern2.png");
+        .bg-set;
+    }
+}
+
+.pricing-table .table ul li:first-child {
+    color: #494949;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.pricing-table .section {
+    ul {
+        margin-top: 190px;
+    }
+    .price {
+        margin-bottom: 50px;
+    }
+    span {
+        background-image: linear-gradient(34deg, #6af4f9 0%, #2eb0ec 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #2eb0ec;
+        font-family: 'Raleway', sans-serif;
+        font-size: 72px;
+        font-weight: 800;
+    }
+}
+
+.pricing-table .section .price sup,
+.pricing-table .section .price sub {
+    color: #2eb0ec;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+.pricing-table .section .price sup {
+    position: relative;
+    top: -23px;
+}
+.pricing-table .section li:not(.class) {
+    color: #7c7c7c;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.pricing-table .student ul li:nth-child(1n+5),
+.pricing-table .professional ul li:nth-child(1n+6) {
+    color: #bebebe;
+}
+
+.pricing-table {
+    .section:hover {
+        transform: scale(1.05);
+        transition: all .5s;
+        z-index: 100;
+        box-shadow: 0 0 10px gray;
+    }
+    .section:nth-child(1n+2) {
+        margin-left: 40px;
+    }
+}
+
+.pricing-table .section .select_price {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #66d4f4;
+    border: none;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 45px;
+    cursor: pointer;
+    &:hover {
+        letter-spacing: 1.4px;
+        box-shadow: 0 10px 16px rgba(102, 212, 244, 0.3);
+    }
+}
+
+@media(max-width: 800px){
+    .pricing-table .section:nth-child(1n+2) {
+        margin-left: 5px;
+    }
+}
+
+@media(max-width: 660px){
+    .pricing-table {
+        .section {
+            width: 150px;
+        }
+    }
+}
+
+@media(max-width: 500px){
+    .pricing-table .section {
+    span {
+        font-size: 35px;
+        }
+        .select_price {
+        width: 100px;
+        }
+    }
+}

@@ -1,0 +1,203 @@
+@mycolor: #ffffff;
+@mycolorgrey: #494949;
+@mycolorlightgrey: #7c7c7c;
+@myfont: 'Raleway', sans-serif;
+@mysemifont: "Raleway - Semi Bold", sans-serif;
+@myrobofont: 'Roboto Slab', serif;
+
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: @mycolor;
+    header {
+        background: url("../img/header/background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 830px;
+        nav {
+            max-width: 70%;
+            border-bottom: 1px solid #b9dffc;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            justify-content: space-between;
+            padding: 30px 0;
+        }
+    }
+}
+
+h2 {
+    margin-top: 18px;
+    font-family: @myrobofont;
+    color: @mycolorgrey;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+}
+
+h3,
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-family: @myrobofont;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: @mycolorlightgrey;
+}
+
+hr {
+    width: 30px;
+    height: 2px;
+    background-color: #2eb0ec;
+    margin-top: 20px;
+}
+
+.navbar {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        overflow: hidden;
+        padding: 20px 0;
+    }
+    img {
+        width: 168px;
+        height: 51px;
+    }
+}
+
+
+.navbar ul li a {
+    text-decoration: none;
+    font-family: @myfont;
+    text-transform: uppercase;
+    color: @mycolor;
+    font-size: 17px;
+    padding: 10px 15px;
+    &:hover {
+        background-color: #4ca3e6;
+        border-radius: 5px;
+    }
+}
+
+
+header article {
+    margin-left: 15%;
+    margin-top: 16%;
+    .info {
+        width: 500px;
+        h1 {
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 28px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 40px;
+        }
+    }
+}
+
+
+.info h1,
+.info p {
+    font-family: @myfont;
+    color: #fefefe;
+}
+
+article {
+    .google {
+    background-image: url("../img/header/google_play.png");
+    background-repeat: no-repeat;
+    background-position: 6%;
+    margin-right: 5%;
+    }
+    button {
+    width: 220px;
+    height: 70px;
+    margin-top: 12%;
+    border-radius: 7px;
+    background-color: @mycolor;
+    border: none;
+    font-size: 20px;
+    color: #3e3e3e;
+    font-family: @mysemifont;
+    cursor: pointer;
+    &:hover {
+        background-color: #4ca3e6;
+        color: @mycolor;
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+    header article .info {
+        width: auto;
+    }
+}
+
+// services
+
+section .services {
+    text-align: center;
+    .headertop {
+        padding-top: 95px;
+    }
+    .web {
+        width: 300px;
+        height: 115px;
+        padding: 150px 40px;
+        h3 {
+            color: @mycolorgrey;
+            font-family: @myfont;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+        p {
+            color: @mycolorlightgrey;
+            font-family: @myfont;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 26px;
+        }
+    }
+}
+
+.services {
+    article {
+        padding-top: 95px;
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+    }
+    .development {
+        background-image: url("../img/services/webdevelopment.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+    .photography {
+        background-image: url("../img/services/photography.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+    .vector {
+        background-image: url("../img/services/vectorartist.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+}
+
+@media(max-width: 600px){
+    section .services .web{
+        padding: 150px 5px;
+    }
+}
