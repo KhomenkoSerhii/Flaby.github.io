@@ -70,7 +70,6 @@ hr {
     }
 }
 
-
 .navbar ul li a {
     text-decoration: none;
     font-family: @myfont;
@@ -83,7 +82,6 @@ hr {
         border-radius: 5px;
     }
 }
-
 
 header article {
     margin-left: 15%;
@@ -105,7 +103,6 @@ header article {
     }
 }
 
-
 .info h1,
 .info p {
     font-family: @myfont;
@@ -114,29 +111,28 @@ header article {
 
 article {
     .google {
-    background-image: url("../img/header/google_play.png");
-    background-repeat: no-repeat;
-    background-position: 6%;
-    margin-right: 5%;
+        background-image: url("../img/header/google_play.png");
+        background-repeat: no-repeat;
+        background-position: 6%;
+        margin-right: 5%;
     }
     button {
-    width: 220px;
-    height: 70px;
-    margin-top: 12%;
-    border-radius: 7px;
-    background-color: @mycolor;
-    border: none;
-    font-size: 20px;
-    color: #3e3e3e;
-    font-family: @mysemifont;
-    cursor: pointer;
-    &:hover {
-        background-color: #4ca3e6;
-        color: @mycolor;
+        width: 220px;
+        height: 70px;
+        margin-top: 12%;
+        border-radius: 7px;
+        background-color: @mycolor;
+        border: none;
+        font-size: 20px;
+        color: #3e3e3e;
+        font-family: @mysemifont;
+        cursor: pointer;
+        &:hover {
+            background-color: #4ca3e6;
+            color: @mycolor;
         }
     }
 }
-
 
 @media (max-width: 600px) {
     header article .info {
@@ -196,8 +192,20 @@ section .services {
     }
 }
 
-@media(max-width: 600px){
-    section .services .web{
-        padding: 150px 5px;
+@media(max-width: 600px) {
+    section .services {
+        .web {
+            padding: 120px 0;
+        }
+        .development {
+            background-size: 50px 50px;
+        }
+        .photography {
+            background-size: 50px 50px;
+        }
+        .vector {
+
+            background-size: 50px 50px;
+        }
     }
 }
