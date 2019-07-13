@@ -11,11 +11,14 @@
     <link rel="stylesheet/less" href="css/normalize.css">
     <link rel="stylesheet/less" href="css/style.less">
     <link rel="stylesheet/less" href="css/services.less">
+    <link rel="stylesheet/less" href="css/slider.less">
     <link rel="stylesheet/less" href="css/other-services.less">
     <link rel="stylesheet/less" href="css/services5.less">
     <link rel="stylesheet/less" href="css/pricing.less">
     <link rel="stylesheet/less" href="css/form.less">
-    <script src="js/less.min.js"></script>
+    <link rel="stylesheet" href="owncarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="owncarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="owncarousel/assets/animate.css">
     <title>Flaby</title>
 
 </head>
@@ -123,7 +126,7 @@
         <div class="columns">
             <div>
                 <div class="first">
-                        <img src="img/other-services/lamp.svg" alt="">
+                    <img src="img/other-services/lamp.svg" alt="">
                     <h3>
                         Idea Developing
                     </h3>
@@ -183,30 +186,50 @@
                     form with design
                 </p>
             </div>
-
         </div>
     </section>
 
+    <section class="slider">
+        <div class="slider wrapper">
+            <div class="customn comments">
+                <h3>Get Know About</h3>
+                <h2>what customer say</h2>
 
+                <hr>
 
-
-
-    <section>
-
-        <div class="customne comments">
-            <h3>Get Know About</h3>
-            <h2>what customer say</h2>
-            <hr>
-            <!-- <article>
-
-            </article> -->
+                <div class="home-demo">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="article">
+                                <h3>Sourabh B.</h3>
+                                <p>Co Founder of Mew</p>
+                                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit maxime natus
+                                    aspernatur adipisci qui magni nostrum nemo nobis voluptatem. Quod voluptates.
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="article">
+                                <h3>Sourabh B.</h3>
+                                <p>Co Founder of Mew</p>
+                                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit maxime natus
+                                    aspernatur adipisci qui magni nostrum nemo nobis voluptatem. Quod voluptates.
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="article">
+                                <h3>Sourabh B.</h3>
+                                <p>Co Founder of Mew</p>
+                                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit maxime natus
+                                    aspernatur adipisci qui magni nostrum nemo nobis voluptatem. Quod voluptates.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-
     </section>
-
-
-
 
     <section class="mockup">
         <div class="contr">
@@ -284,11 +307,11 @@
             <hr>
 
             <div class="name">
-                <input name="name" type="text" value="" placeholder="Your Name" required >
+                <input name="name" type="text" value="" placeholder="Your Name" required>
             </div>
 
             <div class="email">
-                <input type="text" value="" placeholder="Example@gmail.com" required >
+                <input type="text" value="" placeholder="Example@gmail.com" required>
             </div>
 
             <form>
@@ -301,59 +324,86 @@
     <hr class="last">
 
     <footer>
-        <div class="columns">
-            <div class="Logo">
+        <div class="footer-top">
+            <div class="logo">
                 <img src="img/logo2.png" alt="">
                 <p>
                     Flaby is a free flat template and available for free downloads bur please don't use for sell
                 </p>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-            </div>
-
-            <div class="useful links">
                 <ul>
-                    <li><a href="#">Resource</a></li>
-                    <li><a href="#">Downloads</a></li>
-                    <li><a href="#">Graphics</a></li>
-                    <li><a href="#">Templates</a></li>
-                    <li><a href="#">UI color</a></li>
+                    <li> <a href="https://www.facebook.com"><i class="fa fa-facebook-official"
+                                aria-hidden="true"></i></a></li>
+                    <li> <a href="https://www.google.com.ua"><i class="fa fa-google-plus-square"
+                                aria-hidden="true"></i></a></li>
+                    <li> <a href="https://twitter.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
 
-
-            <div class="free goods">
-                <ul>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Music</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">Games</a></li>
-                    <li><a href="#">Application</a></li>
-                </ul>
+            <div class="column">
+                <div class="footer-links">
+                    <h4>Useful Link</h4>
+                    <ul>
+                        <li><a href="#">Resource</a></li>
+                        <li><a href="#">Downloads</a></li>
+                        <li><a href="#">Graphics</a></li>
+                        <li><a href="#">Templates</a></li>
+                        <li><a href="#">UI colors</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="elements">
-                <ul>
-                    <li><a href="#">UI Elements</a></li>
-                    <li><a href="#">Materials</a></li>
-                    <li><a href="#">Flat Ui</a></li>
-                    <li><a href="#">Print File</a></li>
-                    <li><a href="#">Flyer</a></li>
-                </ul>
+            <div class="column">
+                <div class="footer-links">
+                    <h4>Free Goods</h4>
+                    <ul>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Application</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="about us">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Layourl</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
+            <div class="column">
+                <div class="footer-links">
+                    <h4>Elements</h4>
+                    <ul>
+                        <li><a href="#">UI Elements</a></li>
+                        <li><a href="#">Materials</a></li>
+                        <li><a href="#">Flat UI</a></li>
+                        <li><a href="#">Print File</a></li>
+                        <li><a href="#">Flyer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="footer-links">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Layourt</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+
+        <hr class="last">
+
+        <div class="copy">
+            <p>&copy; Copyright 2019 | All rights reserved | Website layout By <span>Serhii Khomenko</span></p>
+        </div>
+
     </footer>
+
+    <script src="owncarousel/js/jquery.min.js"></script>
+    <script src="owncarousel/js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/less.min.js"></script>
 
 </body>
 
